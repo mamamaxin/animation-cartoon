@@ -48,7 +48,7 @@
     $(document).ready(function(){
         var $images = $("#scroll-images img");
         for (var i = 0; i < $images.length; i++){
-            $($images[1]).css({top: -1*480 + 'px', zIndex:999});
+            $($images[i]).css({top: -i*480 + 'px', zIndex:999});
         }
         setInterval(jobl,1000);
     })
